@@ -3,7 +3,7 @@ This is an augemented reality (AR) iOS application, built with echo3D Swift SDK 
 
 ## Setup Application
 In order to setup the app using the preselected dresses, follow these steps:
-1. Open XCode or download it [here] (https://developer.apple.com/xcode/).
+1. Open XCode or download it [here](https://developer.apple.com/xcode/).
 2. Clone this repository and open in XCode on computer.
 3. Go to the "Signing & Capabilities" tab in Xcode and fill out your signing information.
 4. Connect your iPhone/iPad to computer.
