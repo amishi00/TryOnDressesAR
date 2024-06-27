@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "216E98A62515B3F000E9FC9B"
-               BuildableName = "ARTownBuilderDemo.app"
+               BuildableName = "ARTryOnDresses.app"
                BlueprintName = "ARTryOnDresses"
                ReferencedContainer = "container:ARTryOnDresses.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "216E98A62515B3F000E9FC9B"
-            BuildableName = "ARTownBuilderDemo.app"
+            BuildableName = "ARTryOnDresses.app"
             BlueprintName = "ARTryOnDresses"
             ReferencedContainer = "container:ARTryOnDresses.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "216E98A62515B3F000E9FC9B"
-            BuildableName = "ARTownBuilderDemo.app"
+            BuildableName = "ARTryOnDresses.app"
             BlueprintName = "ARTryOnDresses"
             ReferencedContainer = "container:ARTryOnDresses.xcodeproj">
          </BuildableReference>
