@@ -15,7 +15,8 @@ In order to setup the app using the preselected dresses, follow these steps:
 - If the "Add" button is selected, choose an object to add and touch somewhere on your horizontal plane to add it.
 - If any other edit buttons are selected such as drag, rotate, or delete, tap or drag on the object you would like to edit.
 - Objects can be scaled at any time by doing the two finger pinch gesture on them.
-
-## Feedback/Support
-If you would like to provide any feedback or ask for support, feel free to reach out at amishigupta2809@gmail.com!
+## Learn More
+Refer to our [documentation](https://docs.echo3d.com/swift/installation) to learn more about how to use echo3D and the Swift SDK.
+## Support
+Feel free to reach out at [support@echo3D.co](support@echo3D.co) or join our [support channel on Slack](https://go.echo3d.co/join).
 
