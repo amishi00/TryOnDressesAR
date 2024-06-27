@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		216E98A72515B3F000E9FC9B /* ARTownBuilderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARTownBuilderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		216E98A72515B3F000E9FC9B /* ARTryOnDresses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARTryOnDresses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		216E98AA2515B3F000E9FC9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		216E98AE2515B3F000E9FC9B /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		216E98B12515B3F000E9FC9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		216E989E2515B3F000E9FC9B = {
 			isa = PBXGroup;
 			children = (
-				216E98A92515B3F000E9FC9B /* ARTownBuilderDemo */,
+				216E98A92515B3F000E9FC9B /* ARTryOnDresses */,
 				216E98A82515B3F000E9FC9B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,12 +56,12 @@
 		216E98A82515B3F000E9FC9B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				216E98A72515B3F000E9FC9B /* ARTownBuilderDemo.app */,
+				216E98A72515B3F000E9FC9B /* ARTryOnDresses.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		216E98A92515B3F000E9FC9B /* ARTownBuilderDemo */ = {
+		216E98A92515B3F000E9FC9B /* ARTryOnDresses */ = {
 			isa = PBXGroup;
 			children = (
 				216E98C22515B5C600E9FC9B /* Echo3D.swift */,
@@ -76,15 +76,15 @@
 				216E98B52515B3F400E9FC9B /* LaunchScreen.storyboard */,
 				216E98B82515B3F400E9FC9B /* Info.plist */,
 			);
-			path = ARTownBuilderDemo;
+			path = ARTryOnDresses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		216E98A62515B3F000E9FC9B /* ARTownBuilderDemo */ = {
+		216E98A62515B3F000E9FC9B /* ARTryOnDresses */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 216E98BB2515B3F400E9FC9B /* Build configuration list for PBXNativeTarget "ARTownBuilderDemo" */;
+			buildConfigurationList = 216E98BB2515B3F400E9FC9B /* Build configuration list for PBXNativeTarget "ARTryOnDresses" */;
 			buildPhases = (
 				216E98A32515B3F000E9FC9B /* Sources */,
 				216E98A42515B3F000E9FC9B /* Frameworks */,
@@ -94,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = ARTownBuilderDemo;
+			name = ARTryOnDresses;
 			productName = ARTownBuilderDemo;
-			productReference = 216E98A72515B3F000E9FC9B /* ARTownBuilderDemo.app */;
+			productReference = 216E98A72515B3F000E9FC9B /* ARTryOnDresses.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 216E98A22515B3F000E9FC9B /* Build configuration list for PBXProject "ARTownBuilderDemo" */;
+			buildConfigurationList = 216E98A22515B3F000E9FC9B /* Build configuration list for PBXProject "ARTryOnDresses" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				216E98A62515B3F000E9FC9B /* ARTownBuilderDemo */,
+				216E98A62515B3F000E9FC9B /* ARTryOnDresses */,
 			);
 		};
 /* End PBXProject section */
@@ -303,14 +303,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6FJCNFBX7P;
+				DEVELOPMENT_TEAM = 5Q972G659C;
 				INFOPLIST_FILE = ARTownBuilderDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = DayeDev.ARTownBuilderDemo2;
-				PRODUCT_NAME = ARTownBuilderDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = DayeDev.ARTownBuilderDemo23456;
+				PRODUCT_NAME = ARTryOnDresses;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -321,14 +321,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6FJCNFBX7P;
+				DEVELOPMENT_TEAM = 5Q972G659C;
 				INFOPLIST_FILE = ARTownBuilderDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = DayeDev.ARTownBuilderDemo2;
-				PRODUCT_NAME = ARTownBuilderDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = DayeDev.ARTownBuilderDemo23456;
+				PRODUCT_NAME = ARTryOnDresses;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -337,7 +337,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		216E98A22515B3F000E9FC9B /* Build configuration list for PBXProject "ARTownBuilderDemo" */ = {
+		216E98A22515B3F000E9FC9B /* Build configuration list for PBXProject "ARTryOnDresses" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				216E98B92515B3F400E9FC9B /* Debug */,
@@ -346,7 +346,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		216E98BB2515B3F400E9FC9B /* Build configuration list for PBXNativeTarget "ARTownBuilderDemo" */ = {
+		216E98BB2515B3F400E9FC9B /* Build configuration list for PBXNativeTarget "ARTryOnDresses" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				216E98BC2515B3F400E9FC9B /* Debug */,

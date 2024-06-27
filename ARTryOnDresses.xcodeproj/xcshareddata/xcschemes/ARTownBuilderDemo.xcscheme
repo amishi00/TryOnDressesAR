@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "216E98A62515B3F000E9FC9B"
                BuildableName = "ARTownBuilderDemo.app"
-               BlueprintName = "ARTownBuilderDemo"
-               ReferencedContainer = "container:ARTownBuilderDemo.xcodeproj">
+               BlueprintName = "ARTryOnDresses"
+               ReferencedContainer = "container:ARTryOnDresses.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,8 +46,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "216E98A62515B3F000E9FC9B"
             BuildableName = "ARTownBuilderDemo.app"
-            BlueprintName = "ARTownBuilderDemo"
-            ReferencedContainer = "container:ARTownBuilderDemo.xcodeproj">
+            BlueprintName = "ARTryOnDresses"
+            ReferencedContainer = "container:ARTryOnDresses.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "216E98A62515B3F000E9FC9B"
             BuildableName = "ARTownBuilderDemo.app"
-            BlueprintName = "ARTownBuilderDemo"
-            ReferencedContainer = "container:ARTownBuilderDemo.xcodeproj">
+            BlueprintName = "ARTryOnDresses"
+            ReferencedContainer = "container:ARTryOnDresses.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

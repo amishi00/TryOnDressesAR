@@ -1,10 +1,10 @@
 /**************************************************************************
-* Copyright (C) echo3D, Inc. 2018-2023.
-* echo3D, Inc. proprietary and confidential.
-* Use subject to the terms of the Terms of Service available at
-* https://www.echo3d.com/terms, or another agreement
-* between echo3D, Inc. and you, your company or other organization.
-**************************************************************************/
+ * Copyright (C) echo3D, Inc. 2018-2023.
+ * echo3D, Inc. proprietary and confidential.
+ * Use subject to the terms of the Terms of Service available at
+ * https://www.echo3d.com/terms, or another agreement
+ * between echo3D, Inc. and you, your company or other organization.
+ **************************************************************************/
 
 import UIKit
 import SceneKit
@@ -12,9 +12,9 @@ import ARKit
 
 
 class ViewController: UIViewController, ARSCNViewDelegate {
-
+    
     @IBOutlet var sceneView: ARSCNView!
-
+    
     var e:echo3D!;
     
     //variables to store data for horizontal planes
@@ -24,15 +24,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     var myPlanes: [SCNNode] = []
     
     //echo3D entry id's for 3D models for app
-    let treeId = "enter entry IDs here"// insert your entry id here
-    let picnicTableId = "enter entry IDs here" // insert your entry id here
-    let roadId = "enter entry IDs here" // insert your entry id here
-    let poolId = "enter entry IDs here" // insert your entry id here
-    let mailBoxId = "enter entry IDs here" // insert your entry id here
-    let houseId = "enter entry IDs here" // insert your entry id here
-    let deerId = "enter entry IDs here" // insert your entry id here
-    let bikeId = "enter entry IDs here" // insert your entry id here
-
+    let blueId = "e2adcc73-6533-43b1-a300-f40622497eba"// insert your entry id here
+    let crystalId = "a2d1470a-76c8-4dd2-8fda-15e6c289ed59" // insert your entry id here
+    let crystal2Id = "a2d1470a-76c8-4dd2-8fda-15e6c289ed59" // insert your entry id here
+    let redTopId = "e22fd434-3173-4179-8b5c-6a50d06d8a7d" // hhinsert your entry id here
+    let redId = "8fe8fb84-e0b1-497f-8206-ef529c9b5393" // insert your entry id here
+    let miniId = "900d289f-0d94-4754-8cd8-a4410c64e90d" // insert your entry id here
+    let redLongId = "f61bb292-9f0d-4b38-a852-23616a3da8e5" // insert your entry id here
+    let maidId = "9aba1bb2-656f-4ae0-bbff-15567154d004" // insert your entry id here
+    
     //buttons for selecting objects to add to sceneView
     @IBOutlet weak var togglePlaneButton: UIButton!
     
@@ -54,11 +54,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var dragButton: UIButton!
     
     @IBOutlet weak var rotateButton: UIButton!
-
+    
     @IBOutlet weak var deleteButton: UIButton!
     
     @IBOutlet weak var addButton: UIButton!
-
+    
     @IBOutlet weak var bikeButton: UIButton!
     
     //variables for keeping track of pan gesture state
@@ -76,17 +76,17 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     //constants to scale down the nodes, when first added to sceneView
     var scaleConstants: [CGFloat]?
-
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         //set all model choice button alpha's to the deselect state
         resetChoiceButtonAlphas()
         
         //select the treeId, by making it's entyr id the selected id
         //and by updating it's button alpha to the selected state
-        selectedId = treeId
+        selectedId = blueId
         treeButton.alpha = 1.0
         
         //set all edit button alpha's to the deselect state
@@ -95,23 +95,23 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         addButton.alpha = 1.0
         
         //array of all entry id's of models users can add
-        idArr = [treeId, roadId, poolId, picnicTableId, mailBoxId, houseId, deerId, bikeId]
+        idArr = [blueId,  crystalId, crystal2Id, redTopId, redId, miniId,  redLongId, maidId]
         
         //default scale constants for the objects (reducing their size to start)
         //(if you chose entries different from the suggested,
         //update these constants to match the size of the entries chosen)
         scaleConstants = [0.009, 0.0004, 0.002, 0.0001, 0.004, 0.003, 0.0004, 0.000013]
-
+        
         // Show statistics such as fps and timing information
         //sceneView.showsStatistics = true
-
+        
         e = echo3D();
         
         //choose a color to use for the plane
         planeColor = UIColor(red: CGFloat(102.0/255) , green: CGFloat(189.0/255), blue: CGFloat(60.0/255), alpha: CGFloat(0.6))
         planeColorOff = UIColor(red: CGFloat(102.0/255) , green: CGFloat(189.0/255), blue: CGFloat(60.0/255), alpha: CGFloat(0.0))
-
-
+        
+        
         //create and add a recognizer to respond to taps on the scene view
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(addObjToSceneView(withGestureRecognizer:)))
         sceneView.addGestureRecognizer(tapGestureRecognizer)
@@ -123,14 +123,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         //create and add a recognizer to respond to finger pinchs on the scene view
         let pinchRecognizer = UIPinchGestureRecognizer(target: self, action: #selector(handlePinch(pinchRecognizer:)))
         sceneView.addGestureRecognizer(pinchRecognizer)
-
+        
         //set scene view to automatically add omni directional light when needed
         sceneView.autoenablesDefaultLighting = true
         sceneView.automaticallyUpdatesLighting = true
-
+        
     }
     
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -138,7 +138,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let configuration = ARWorldTrackingConfiguration()
         configuration.planeDetection = .horizontal
         sceneView.session.run(configuration)
-       
+        
         sceneView.delegate = self
         
         //uncomment to see feature points
@@ -154,7 +154,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         self.present(alert, animated: true, completion: nil)
     }
     
-
+    
     //handlePinch(panGesture:) - takes a UIPinchGestureRecognizer as an argument
     //called whenever a user does a two finger pinch
     //calls the doScale method
@@ -169,7 +169,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @objc func addObjToSceneView(withGestureRecognizer recognizer: UIGestureRecognizer){
         //get location of the tap gesture
         let tapLocation = recognizer.location(in: sceneView)
-
+        
         //if delete is selected
         if self.deleteButton.alpha == 1 {
             //use hit test to get the node tapped
@@ -177,7 +177,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
             //if the node is a plain node return
             if(hitNodeResult.node.name == "plain"){
-               return
+                return
             }
             
             //delete tapped node
@@ -200,6 +200,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         }
         else if self.rotateButton.alpha == 1{
             doRotate(rotateGesture: panGesture)
+        }
+        else if self.addButton.alpha == 1{
+            doAdd(withGestureRecognizer: panGesture)
         }
     }
     
@@ -228,7 +231,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     func doAdd(withGestureRecognizer recognizer: UIGestureRecognizer){
         //get the location of the tap
         let tapLocation = recognizer.location(in: sceneView)
-
+        
         
         //a hit test to see if the user has tapped on an existing plane
         let hitTestResults = sceneView.hitTest(tapLocation, types: .existingPlaneUsingExtent)
@@ -242,7 +245,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let y = translation.y
         let z = translation.z
         
-       //load scene (3d model) from echo3D using the entry id of the users selected button
+        //load scene (3d model) from echo3D using the entry id of the users selected button
         e.loadSceneFromEntryID(entryID: idArr![selectedInd]) { (selectedScene) in
             //make sure the scene has a scene node
             guard let selectedNode = selectedScene.rootNode.childNodes.first else {return}
@@ -269,9 +272,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         //get the location of the user's pan gesture
         let location = panGesture.location(in: self.view)
         print("begin pan")
-
+        
         switch panGesture.state {
-        //if the pan gesture is just beginning
+            //if the pan gesture is just beginning
         case .began:
             //do a hit test, to see if the user has touched a node
             guard let hitNodeResult = sceneView.hitTest(location, options: nil).first else {return}
@@ -327,7 +330,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         }
     }
     
-
+    
     //resetChoiceButtonAlphas()
     //sets all choice button alphas to the default state
     func resetChoiceButtonAlphas(){
@@ -350,8 +353,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         rotateButton.alpha = 0.3
         deleteButton.alpha = 0.3
         addButton.alpha = 0.3
-}
-
+    }
+    
     //choiceButtonTapped(sender:)
     //takes a sender as an argument
     //for our purposes the sender represents which choice button that was tapped
@@ -387,7 +390,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         //if toggle plane tapped,
         //iterate through all horizontal planes, and set their alpha's to 0.0
         for plane in myPlanes {
-               togglePlane(planeNode: plane)
+            togglePlane(planeNode: plane)
         }
         
         //change the state of the toggle plane button (dim or undimmed)
@@ -401,7 +404,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     func togglePlane(planeNode: SCNNode){
         //make plane visible or invisible, by changing its color
         if togglePlaneButton.alpha.isEqual(to: 1.0) {
-           planeNode.geometry?.materials.first?.diffuse.contents = planeColorOff
+            planeNode.geometry?.materials.first?.diffuse.contents = planeColorOff
         }
         else {
             planeNode.geometry?.materials.first?.diffuse.contents = planeColor
@@ -423,8 +426,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     // MARK: - ARSCNViewDelegate
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
         guard let planeAnchor = anchor as? ARPlaneAnchor, let planeNode = node.childNodes.first,
-            let plane = planeNode.geometry as? SCNPlane
-            else {return}
+              let plane = planeNode.geometry as? SCNPlane
+        else {return}
         
         //update the plane node, as plane anchor information updates
         
@@ -435,7 +438,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         //set the plane to the new width and height
         plane.width = w
         plane.height = h
-
+        
         //get the x y and z position of the plane anchor
         let x = CGFloat(planeAnchor.center.x)
         let y = CGFloat(planeAnchor.center.y)
@@ -444,7 +447,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         //set the nodes position to the new x,y, z location
         planeNode.position = SCNVector3(x, y, z)
     }
-
+    
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
         
@@ -456,7 +459,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         //create a new plane
         let plane = SCNPlane(width: w, height: h)
-       
+        
         //set the color of the plane
         plane.materials.first?.diffuse.contents = planeColor!
         

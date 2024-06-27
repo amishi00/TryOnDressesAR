@@ -19,10 +19,10 @@ import Foundation
 
 
 class echo3D{
-    let api_key="enter-api-key" //insert your echo3D API key here
-    //echo3D endpoint
-    var serverURL="https://api.echo3d.com/query?key=<API_KEY>&secKey=<SECRET_KEY>" // Add your secret key here or uncheck the security key box, see README for details
-    //websocket endpoint
+    let api_key="misty-bar-5372" //insert your echo3D API key here
+                                 //echo3D endpoint
+    var serverURL="https://api.echo3d.com/query?key=misty-bar-5372&secKey=Af4UNYgXALBhO7sPwZJ7R5bp" // Add your secret key here or uncheck the security key box, see README for details
+                                                                                                    //websocket endpoint
     var websockURL="wss://api.echo3d.com/message-endpoint"
     //secure websocket endpoint
     //var websockURL="wss://api.echo3d.com/message-endpoint"
@@ -86,7 +86,8 @@ class echo3D{
     
     //queries the url and returns the response
     func queryDatabase(api_key:String, completion: ([Entry]) -> ()){
-        self.serverURL="https://api.echo3d.com/query?key="+api_key;
+        //        self.serverURL="https://api.echo3d.com/query?key="+api_key;
+        
         //check if cached database query
         if(self.entries.count>0){
             //return entries if we've already queried the backend
@@ -131,7 +132,7 @@ class echo3D{
         self.entries.append(entry);
         self.entries_dict[key]=entry;
     }
-
+    
     //getter for list of entries
     func getEntries() -> [Entry]{
         return self.entries;
@@ -225,9 +226,9 @@ class echo3D{
             }
             completion(node_list)
         });
-    
-    
+        
+        
     }
-
+    
     
 }
