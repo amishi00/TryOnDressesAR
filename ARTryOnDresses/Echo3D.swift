@@ -11,7 +11,6 @@
 //  is made available strictly on an “AS IS” BASIS WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
 //  Please review the Terms of Service for details on these and other terms and conditions.
 //
-//  Created by Alexander Kutner.
 //
 
 import SceneKit
@@ -20,9 +19,9 @@ import Foundation
 
 class echo3D{
     let api_key="misty-bar-5372" //insert your echo3D API key here
-                                 //echo3D endpoint
-    var serverURL="https://api.echo3d.com/query?key=misty-bar-5372&secKey=Af4UNYgXALBhO7sPwZJ7R5bp" // Add your secret key here or uncheck the security key box, see README for details
-                                                                                                    //websocket endpoint
+    //if you have a security key, replace the following with
+    // "https://api.echo3d.com/query?key=<your API key>&secKey=<your Security Key>"
+    var serverURL="https://api.echo3d.com/query?key=misty-bar-5372&secKey=Af4UNYgXALBhO7sPwZJ7R5bp"
     var websockURL="wss://api.echo3d.com/message-endpoint"
     //secure websocket endpoint
     //var websockURL="wss://api.echo3d.com/message-endpoint"
@@ -86,7 +85,6 @@ class echo3D{
     
     //queries the url and returns the response
     func queryDatabase(api_key:String, completion: ([Entry]) -> ()){
-        //        self.serverURL="https://api.echo3d.com/query?key="+api_key;
         
         //check if cached database query
         if(self.entries.count>0){
