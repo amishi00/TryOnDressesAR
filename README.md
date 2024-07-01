@@ -8,7 +8,7 @@ In order to setup the app using the preselected dresses, follow these steps:
 3. Go to the "Signing & Capabilities" tab in Xcode and fill out your signing information.
 4. Connect your iPhone/iPad to computer.
 5. Select your device on the dropdown list of devices to run the demo app on.
-![image](https://github.com/amishi00/TryOnDressesAR/assets/98851347/172cf25f-5eda-498b-83d7-55de27d590e7)
+  <img width="400" alt="image" src="https://github.com/amishi00/TryOnDressesAR/assets/98851347/172cf25f-5eda-498b-83d7-55de27d590e7">
 
 
 7. Press the Play button to build and run (Note: your device must be unlocked and in Developer Mode to run).
