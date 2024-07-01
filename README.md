@@ -18,8 +18,9 @@ In order to setup the app using the preselected dresses, follow these steps:
 - If the "Add" button is selected, choose an object to add and touch somewhere on your horizontal plane to add it.
 - If any other edit buttons are selected such as drag, rotate, or delete, tap or drag on the object you would like to edit.
 - Objects can be scaled at any time by doing the two finger pinch gesture on them.
-- <img width="300" alt="Screenshot 2024-07-01 at 10 21 20 AM" src="https://github.com/amishi00/TryOnDressesAR/assets/98851347/bf43c5be-6f6d-478f-b3ca-ab0ecb5e8238">
-- <img width="300" alt="image" src="https://github.com/amishi00/TryOnDressesAR/assets/98851347/e8630e88-bac1-4673-9bd5-828a071c0258">
+<br />
+<img width="300" alt="Screenshot 2024-07-01 at 10 21 20 AM" src="https://github.com/amishi00/TryOnDressesAR/assets/98851347/bf43c5be-6f6d-478f-b3ca-ab0ecb5e8238">
+<img width="300" alt="image" src="https://github.com/amishi00/TryOnDressesAR/assets/98851347/e8630e88-bac1-4673-9bd5-828a071c0258">
 
 
 ## Using your own 3D models
