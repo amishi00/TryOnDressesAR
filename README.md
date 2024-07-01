@@ -40,4 +40,5 @@ In order to setup the app using the preselected dresses, follow these steps:
 Refer to our [documentation](https://docs.echo3d.com/swift/installation) to learn more about how to use echo3D and the Swift SDK.
 ## Support
 Feel free to reach out at [support@echo3D.co](support@echo3D.co) or join our [support channel on Slack](https://go.echo3d.co/join).
+<br /> Demo created by Amishi Gupta.
 
