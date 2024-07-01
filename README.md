@@ -30,7 +30,7 @@ In order to setup the app using the preselected dresses, follow these steps:
 4. Go to the Echo3D.swift file and insert your API key as a string where it says "insert API key here".
 6. [Add models to the echo3D console](https://docs.echo3d.co/quickstart/add-a-3d-model) or choose from our library.
 7. Find your asset in the echo3D console, click the three vertical buttons on the top right, and click "Copy Asset ID" as shown below:
-![image](https://github.com/amishi00/TryOnDressesAR/assets/98851347/7bdc5990-13a2-4745-858f-4370e74972c9)
+<img width = "600" alt = "asset ID" src = "https://github.com/amishi00/TryOnDressesAR/assets/98851347/7bdc5990-13a2-4745-858f-4370e74972c9">
 8. Go to the ViewController.swift file, add the asset ID's for 3D content you have added to your echo3D console where it says "insert asset ID here".
 9. Connect your iPhone/iPad to computer.
 10. Select your device on the dropdown list of devices to run the demo app on.
