@@ -28,15 +28,15 @@ In order to setup the app using the preselected dresses, follow these steps:
 2. Open ARTryOnDresses.xcodeproj using Xcode (Note: If you have Xcode downloaded you simply double click the file to open).
 3. Go to the "Signing & Capabilities" tab in Xcode and fill out your signing information. See more details [here](https://docs.echo3d.co/swift/adding-ar-capabilities).
 4. Go to the Echo3D.swift file and insert your API key as a string where it says "insert API key here".
-6. [Add models to the echo3D console](https://docs.echo3d.co/quickstart/add-a-3d-model) or choose from our library.
-7. Find your asset in the echo3D console, click the three vertical buttons on the top right, and click "Copy Asset ID" as shown below:
+5. [Add models to the echo3D console](https://docs.echo3d.co/quickstart/add-a-3d-model) or choose from our library.
+6. Find your asset in the echo3D console, click the three vertical buttons on the top right, and click "Copy Asset ID" as shown below:
 <br />
 <img width = "600" alt = "asset ID" src = "https://github.com/amishi00/TryOnDressesAR/assets/98851347/7bdc5990-13a2-4745-858f-4370e74972c9">
 <br />
-8. Go to the ViewController.swift file, add the asset ID's for 3D content you have added to your echo3D console where it says "insert asset ID here".
-9. Connect your iPhone/iPad to computer.
-10. Select your device on the dropdown list of devices to run the demo app on.
-11. Press the Play button to build and run (Note: your device must be unlocked and in Developer Mode to run).
+7. Go to the ViewController.swift file, add the asset ID's for 3D content you have added to your echo3D console where it says "insert asset ID here".
+8. Connect your iPhone/iPad to computer.
+9. Select your device on the dropdown list of devices to run the demo app on.
+10. Press the Play button to build and run (Note: your device must be unlocked and in Developer Mode to run).
 
 ## Learn More
 Refer to our [documentation](https://docs.echo3d.com/swift/installation) to learn more about how to use echo3D and the Swift SDK.
