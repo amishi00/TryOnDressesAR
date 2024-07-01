@@ -30,6 +30,7 @@ In order to setup the app using the preselected dresses, follow these steps:
 4. Go to the Echo3D.swift file and insert your API key as a string where it says "insert API key here".
 5. [Add models to the echo3D console](https://docs.echo3d.co/quickstart/add-a-3d-model) or choose from our library
 6. Go to the ViewController.swift file, add the entry ID's for 3D content you have added to your echo3D console where it says "insert entry ID here".
+<br />
  ![image](https://github.com/amishi00/TryOnDressesAR/assets/98851347/dd9fd584-faf1-4708-a9c9-f87c572d52fa)
 
 7. Connect your iPhone/iPad to computer.
