@@ -8,14 +8,16 @@ In order to setup the app using the preselected dresses, follow these steps:
 3. Go to the "Signing & Capabilities" tab in Xcode and fill out your signing information.
 4. Connect your iPhone/iPad to computer.
 5. Select your device on the dropdown list of devices to run the demo app on.
-6. Press the Play button to build and run (Note: your device must be unlocked and in Developer Mode to run).
+   ![image](https://github.com/amishi00/TryOnDressesAR/assets/98851347/44e84883-7267-4e62-8813-db0c948d17bb)
+
+7. Press the Play button to build and run (Note: your device must be unlocked and in Developer Mode to run).
 
 ## Run
 - Move your phone around a horizontal surface to scan a plane.
 - If the "Add" button is selected, choose an object to add and touch somewhere on your horizontal plane to add it.
 - If any other edit buttons are selected such as drag, rotate, or delete, tap or drag on the object you would like to edit.
 - Objects can be scaled at any time by doing the two finger pinch gesture on them.
-  <img width="614" alt="image" src="https://github.com/amishi00/TryOnDressesAR/assets/98851347/e8630e88-bac1-4673-9bd5-828a071c0258">
+  <img width="400" alt="image" src="https://github.com/amishi00/TryOnDressesAR/assets/98851347/e8630e88-bac1-4673-9bd5-828a071c0258">
 
 
 ## Using your own 3D models
