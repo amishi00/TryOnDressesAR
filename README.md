@@ -31,7 +31,7 @@ In order to setup the app using the preselected dresses, follow these steps:
 5. [Add models to the echo3D console](https://docs.echo3d.co/quickstart/add-a-3d-model) or choose from our library
 6. Go to the ViewController.swift file, add the entry ID's for 3D content you have added to your echo3D console where it says "insert entry ID here".
 <br />
- ![image](https://github.com/amishi00/TryOnDressesAR/assets/98851347/dd9fd584-faf1-4708-a9c9-f87c572d52fa)
+<img width="300" alt="Screenshot 2024-07-01 at 10 21 20 AM" src="https://github.com/amishi00/TryOnDressesAR/assets/98851347/dd9fd584-faf1-4708-a9c9-f87c572d52fa">
 
 7. Connect your iPhone/iPad to computer.
 8. Select your device on the dropdown list of devices to run the demo app on.
